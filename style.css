@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: #bcbcbc;
+    height: 100vw;
+    font-family: 'Uchen', serif;
+    color: white;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 50px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 25px;
+    padding: 20px 10px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+}
+
+.main {
+    /* background-color: aqua; */
+    width: 90vw;
+}
+
+.infocontainer {
+    /* background-color: red; */
+    height: 65vh;
+    width: 80vw;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.hello {
+    font-size: 60px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.about {
+    font-size: 50px;
+}
+
+.buttons {
+    margin-top: 16px;
+}
+
+.buttons button {
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 0px 6px;
+    background-color: rgba(138, 138, 138, 0.3);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: rgba(53, 53, 53, 0.6);
+}
+
+.devPic img {
+    height: 65vh;
+}
+
+.btn {
+    width: 140px;
+    margin-left: 19px;
+    margin-top: 0;
+}
+
+/* CSS for contact form */
+
+.contactform {
+    font-family: 'Uchen', serif;
+    padding: 100px 90px;
+    margin: 0px 88px;
+}
+
+.contactform h1 {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 12px 0px;
+}
+
+.contactform form div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.contactform form div input {
+    margin: 10px 0px 0px 0px;
+    border-radius: 9px;
+    padding: 7px 0px;
+    width: 25vw;
+    text-align: center;
+}
+
+#emailHelp {
+    font-size: 10px;
+    color: midnightblue;
+    margin: 0px 5px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 14px;
+    margin: -3px 13px 0px 0px;
+}
+/* This class is use for hiding navbar */
+.sidebarGo {
+    position: absolute;
+    transform: translate(-280px, 0px);
+}
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham {
+ 
+    margin-top: 4px;
+}
+.cross {
+    margin-left: 184px;
+    margin-top: 4px;
+}
+@media (max-width: 800px) {
+    
+    /* .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+    .devPic {
+        display: none;
+    }
+}

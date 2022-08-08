@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="button.css"> -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/intro.html">My intro</a></li>
+          <li><a href="/skill.html">Skills</a></li>
+          <li><a href="/contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger">
+      <img class="ham" src="image/nav.png" alt="" width="23px">
+      <img class="cross" src="image/cross.webp" alt="" width="23px">
+    </div>
+    <div class="main">
+      <div class="contactform">
+        
+        <h1>Contact me for anything</h1>
+        <form>
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Name </label>
+            <input type="name" class="form-control" id="clientname" aria-describedby="text"
+              placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp"
+              placeholder="Enter your email">
+            <div id="emailHelp" class="form-text">We'll never share your email & phone number with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="clientphone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="clientphone" placeholder="Enter your contact number">
+          </div>
+          <div class="mb-3">
+            <label for="clientphone" class="form-label">Enquiry</label>
+            <input type="text" class="form-control" id="clientphone" placeholder="Enquiry">
+          </div>
+          <div class="mb-3" id="form-check">
+            <input type="checkbox" class="form-check-input" id="isclient">
+            <label class="form-check-label" for="isclient">You want to work with me..!!</label>
+          </div>
+          <div class="buttons btn">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
