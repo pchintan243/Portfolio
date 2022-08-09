@@ -195,6 +195,24 @@ hr {
     padding: 10px;
     width: 80%;
 }
+.myPhoto {
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #5024246e;
+    border-radius: 20px;
+    width: 10em;
+    padding: 20px;
+}
+.myPhoto img{
+    /* display: flex; */
+    /* margin: auto; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    /* padding: 20px; */
+}
 @media (max-width: 800px) {
 
     /* .sidebar {
