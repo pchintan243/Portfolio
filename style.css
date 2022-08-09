@@ -15,7 +15,7 @@
 .sidebar {
     position: absolute;
     background-color: #bcbcbc;
-    height: 100vw;
+    height: 132vw;
     font-family: 'Uchen', serif;
     color: white;
     transition: transform 0.3s ease-in;
