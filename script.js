@@ -18,5 +18,3 @@ document.querySelector('.hamburger').addEventListener("click", () => {
         }, 400);
     }
 });
-
-console.log("fsfs");
