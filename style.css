@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+/* body {
+    display: block;
+} */
+
 .container {
     display: flex;
 }
@@ -209,7 +213,6 @@
 }
 
 .ham {
-
     margin-top: 4px;
 }
 
@@ -218,6 +221,13 @@
     margin-top: 4px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 .link {
     /* background-color: black; */
     display: flex;
@@ -226,7 +236,7 @@
     margin: 2px;
 }
 
-.link img {
+.link a {
     padding: 5px;
 }
 
@@ -252,7 +262,13 @@ hr {
     width: 80%;
     margin-bottom: 20px;
 }
-
+#email p {
+    /* text-align: center; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
 .myPhoto {
     display: flex;
     margin: auto;
@@ -266,16 +282,16 @@ hr {
 
 .myPhoto img {
     /* display: flex; */
-    /* margin: auto; */
-    /* justify-content: center; */
+    /* justify-content: center;     */
     /* align-items: center; */
+    /* margin: auto; */
     width: 100%;
     /* padding: 20px; */
 }
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
 
     /* .sidebar {
         transform: translate(-443px, 0px);
@@ -286,17 +302,25 @@ hr {
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 580px) {
     .waviy {
         font-size: 2rem;
     }
-
+    .devInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
     .first {
         display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
     }
 
     .patel {
-        display: none;
+        display: flex;
     }
 
     .chintan {
@@ -304,4 +328,48 @@ hr {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .myPhoto {
+        /* display: block; */
+        /* display: flex; */
+        /* margin: auto; */
+        /* margin-top: 50px; */
+    }
+    .link a img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: auto; */
+        /* width: 100px; */
+    }
+}
+
+@media (max-width: 500px) {
+    .infocontainer {
+        margin: auto;
+        margin-left: 7rem;
+    }
+    .skills {
+        display: flex;
+        margin: auto;
+        margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+        width: 500px;
+    }
+
+    /* .myPhoto {
+        display: flex;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        background-color: #5024246e;
+        border-radius: 20px;
+        width: 10em;
+        padding: 20px;
+    }
+    /* .myPhoto img { */
+        display: flex;
+        margin: auto;
+    } */
 }
