@@ -8,9 +8,17 @@
     padding: 0;
 }
 
-/* body {
-    display: block;
-} */
+html {
+    /* width: 100%; */
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
 .container {
     display: flex;
@@ -24,6 +32,13 @@
     color: white;
     transition: transform 0.3s ease-in;
 }
+
+/* This class is use for hiding navbar */
+.sidebarGo {
+    position: absolute;
+    transform: translate(-280px, 0px);
+}
+
 
 .sidebar nav {
     padding: 50px;
@@ -45,6 +60,23 @@
     width: 90vw;
 }
 
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham {
+    margin-top: 4px;
+}
+
+.cross {
+    margin-left: 204px;
+    margin-top: 4px;
+}
+
+
 .infocontainer {
     /* background-color: red; */
     height: 65vh;
@@ -63,11 +95,21 @@
 }
 
 .waviy {
-    /* position: relative; */
+    position: relative;
     background-color: rgb(188 188 188 / 77%);
     border: 2px solid #6e6e6e;
     border-radius: 20px;
     padding: 30px;
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.1s * var(--i))
 }
 
 .first,
@@ -85,16 +127,6 @@
     margin-bottom: 0px;
     margin-top: 0px;
     z-index: 1;
-}
-
-.waviy span {
-    position: relative;
-    display: inline-block;
-    font-size: 40px;
-    color: black;
-    text-transform: uppercase;
-    animation: flip 2s infinite;
-    animation-delay: calc(.1s * var(--i))
 }
 
 @keyframes flip {
@@ -131,12 +163,6 @@
     height: 65vh;
 }
 
-.btn {
-    width: 140px;
-    margin-left: 19px;
-    margin-top: 0;
-}
-
 .skills {
     display: flex;
     flex-direction: column;
@@ -144,19 +170,219 @@
     align-items: center;
     background: black;
     color: white;
-    height: 8rem;
+    height: 6em;
     font-size: larger;
     width: 90rem;
     margin: auto;
     margin-bottom: 20px;
     border-radius: 15px;
-    box-shadow: 10px 12px 12px 10px black;
+    /* box-shadow: 10px 12px 12px 10px black; */
+}
+
+.lang {
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+    /* margin: auto; */
+}
+
+@media (max-width: 400px) {
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 33rem;
+        /* flex-wrap: wrap; */
+        padding: 10px;
+        text-align: center;
+    }
 }
 
 #head {
+    /* margin: auto; */
     margin-bottom: 20px;
     text-decoration: underline;
+    /* text-align: center; */
 }
+
+/* .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* margin-left: 10rem; */
+    /* margin-right: 10rem; */
+    /* width: 70rem;
+    border: 2px solid black;
+    background-color: red; */
+/* }  */
+
+
+.myPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    background-color: #e171716e;
+    border-radius: 20px;
+    width: 10em;
+    padding: 20px;
+}
+
+.myPhoto img {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+@media (max-width: 1000px) {    
+    .myPhoto {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+hr {
+    width: 40rem;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    margin: 2px;
+}
+
+.link a {
+    padding: 5px;
+}
+
+
+.email {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    width: 40rem;
+    margin-bottom: 200px;
+}
+
+.email p {
+    display: flex;
+    /* margin: auto; */
+    font-size: large;
+    justify-content: center;
+}
+
+
+/* @media (max-width: 960px) {
+
+    /* .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+/* .devPic {
+        display: none;
+    } */
+/* } */
+
+/* @media (max-width: 580px) { */
+/* .waviy {
+        font-size: 2rem;
+    } */
+/* .devInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    } */
+/* .first {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+    } */
+
+/* .patel {
+        display: flex;
+    } */
+
+/* .chintan {
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+    } */
+
+/* .myPhoto {
+        /* display: block; */
+/* display: flex; */
+/* margin: auto; */
+/* margin-top: 50px; */
+/*} */
+/* .link a img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: auto; */
+/* width: 100px; */
+/* } */
+/* } */
+
+/* @media (max-width: 500px) {
+    .infocontainer {
+        margin: auto;
+        margin-left: 7rem;
+    }
+    .skills {
+        display: flex;
+        margin: auto;
+        margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+        width: 500px;
+    }
+
+    /* .myPhoto {
+        display: flex;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        background-color: #5024246e;
+        border-radius: 20px;
+        width: 10em;
+        padding: 20px;
+    }
+    /* .myPhoto img { */
+/* display: flex; */
+/* margin: auto; */
+/* } */
+/* } */
+
 
 /* CSS for contact form */
 
@@ -199,177 +425,8 @@
     margin: -3px 13px 0px 0px;
 }
 
-/* This class is use for hiding navbar */
-.sidebarGo {
-    position: absolute;
-    transform: translate(-280px, 0px);
-}
-
-.hamburger {
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    left: 10px;
-}
-
-.ham {
-    margin-top: 4px;
-}
-
-.cross {
-    margin-left: 204px;
-    margin-top: 4px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-.link {
-    /* background-color: black; */
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin: 2px;
-}
-
-.link a {
-    padding: 5px;
-}
-
-hr {
-    width: 80%;
-    border: 1px solid black;
-    background-color: black;
-    border-radius: 50px;
-    margin: auto;
-}
-
-#email {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    background-color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: auto;
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 20px;
-}
-#email p {
-    /* text-align: center; */
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-}
-.myPhoto {
-    display: flex;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    background-color: #5024246e;
-    border-radius: 20px;
-    width: 10em;
-    padding: 20px;
-}
-
-.myPhoto img {
-    /* display: flex; */
-    /* justify-content: center;     */
-    /* align-items: center; */
-    /* margin: auto; */
-    width: 100%;
-    /* padding: 20px; */
-}
-
-
-
-@media (max-width: 960px) {
-
-    /* .sidebar {
-        transform: translate(-443px, 0px);
-        position: absolute;
-    } */
-    .devPic {
-        display: none;
-    }
-}
-
-@media (max-width: 580px) {
-    .waviy {
-        font-size: 2rem;
-    }
-    .devInfo {
-        display: flex;
-        justify-content: center;
-        align-items: center;        
-    }
-    .first {
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        width: 210px;
-    }
-
-    .patel {
-        display: flex;
-    }
-
-    .chintan {
-        display: flex;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .myPhoto {
-        /* display: block; */
-        /* display: flex; */
-        /* margin: auto; */
-        /* margin-top: 50px; */
-    }
-    .link a img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* margin: auto; */
-        /* width: 100px; */
-    }
-}
-
-@media (max-width: 500px) {
-    .infocontainer {
-        margin: auto;
-        margin-left: 7rem;
-    }
-    .skills {
-        display: flex;
-        margin: auto;
-        margin-bottom: 20px;
-        justify-content: center;
-        text-align: center;
-        width: 500px;
-    }
-
-    /* .myPhoto {
-        display: flex;
-        margin: auto;
-        margin-bottom: 20px;
-        margin-top: 50px;
-        background-color: #5024246e;
-        border-radius: 20px;
-        width: 10em;
-        padding: 20px;
-    }
-    /* .myPhoto img { */
-        display: flex;
-        margin: auto;
-    } */
+.btn {
+    width: 140px;
+    margin-left: 19px;
+    margin-top: 0;
 }
