@@ -58,6 +58,8 @@ body {
 .main {
     /* background-color: aqua; */
     width: 90vw;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
 .hamburger {
@@ -81,10 +83,10 @@ body {
     /* background-color: red; */
     height: 65vh;
     width: 80vw;
-    margin: 120px auto;
+    margin: 70px 0px 40px 0px;
+    margin-left: 12.8rem;
     display: flex;
     justify-content: space-around;
-    margin-left: 180px;
 }
 
 .devInfo {
@@ -164,99 +166,104 @@ body {
 }
 
 .skills {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: black;
     color: white;
-    height: 6em;
-    font-size: larger;
-    width: 90rem;
     margin: auto;
-    margin-bottom: 20px;
-    border-radius: 15px;
+    width: 70rem;
+    height: 8rem;
+    font-size: 1.3rem;
+    /* padding: 1.5rem; */
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    border-radius: 1rem;
     /* box-shadow: 10px 12px 12px 10px black; */
 }
-
-.lang {
+.email {
     display: flex;
-    text-align: center;
-    /* justify-content: center; */
-    /* margin: auto; */
-}
-
-@media (max-width: 400px) {
-    .skills {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 33rem;
-        /* flex-wrap: wrap; */
-        padding: 10px;
-        text-align: center;
-    }
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    width: 70rem;
+    height: 7rem;
+    font-size: larger;
+    border-radius: 1rem;
+    margin: auto;
+    /* padding: 1.5rem; */
 }
 
 #head {
     /* margin: auto; */
+    /* position: relative; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     margin-bottom: 20px;
     text-decoration: underline;
     /* text-align: center; */
 }
 
-/* .content {
+.lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: auto; */
+}
+
+.content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-    /* margin-left: 10rem; */
-    /* margin-right: 10rem; */
-    /* width: 70rem;
-    border: 2px solid black;
-    background-color: red; */
-/* }  */
+    /* bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0; */
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
+    width: 70rem;
+    /* border: 2px solid black; */
+    /* background-color: red; */
+}
 
 
 .myPhoto {
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 50px;
     background-color: #e171716e;
     border-radius: 20px;
-    width: 10em;
+    width: 20rem;
     padding: 20px;
 }
 
 .myPhoto img {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
     margin: auto;
     width: 100%;
     /* padding: 20px; */
 }
 
-@media (max-width: 1000px) {    
-    .myPhoto {
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 hr {
-    width: 40rem;
-    border: 1px solid black;
+    width: 70rem;
+    border: 2px solid black;
     background-color: black;
     border-radius: 50px;
     margin: auto;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,119 +277,30 @@ hr {
     margin: auto;
     padding: 10px;
     margin: 2px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
 }
 
 .link a {
-    padding: 5px;
+    padding: 1rem;
+}
+
+.link a img{
+    height: 5rem;
+    width: 5rem;
 }
 
 
-.email {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    flex-direction: column;
-    color: white;
-    background-color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: auto;
-    padding: 10px;
-    width: 40rem;
-    margin-bottom: 200px;
-}
 
 .email p {
     display: flex;
     /* margin: auto; */
-    font-size: large;
+    font-size: 2rem;
     justify-content: center;
+    padding: 0.2rem;
+
 }
-
-
-/* @media (max-width: 960px) {
-
-    /* .sidebar {
-        transform: translate(-443px, 0px);
-        position: absolute;
-    } */
-/* .devPic {
-        display: none;
-    } */
-/* } */
-
-/* @media (max-width: 580px) { */
-/* .waviy {
-        font-size: 2rem;
-    } */
-/* .devInfo {
-        display: flex;
-        justify-content: center;
-        align-items: center;        
-    } */
-/* .first {
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        width: 210px;
-    } */
-
-/* .patel {
-        display: flex;
-    } */
-
-/* .chintan {
-        display: flex;
-        margin-left: 0;
-        margin-right: 0;
-    } */
-
-/* .myPhoto {
-        /* display: block; */
-/* display: flex; */
-/* margin: auto; */
-/* margin-top: 50px; */
-/*} */
-/* .link a img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* margin: auto; */
-/* width: 100px; */
-/* } */
-/* } */
-
-/* @media (max-width: 500px) {
-    .infocontainer {
-        margin: auto;
-        margin-left: 7rem;
-    }
-    .skills {
-        display: flex;
-        margin: auto;
-        margin-bottom: 20px;
-        justify-content: center;
-        text-align: center;
-        width: 500px;
-    }
-
-    /* .myPhoto {
-        display: flex;
-        margin: auto;
-        margin-bottom: 20px;
-        margin-top: 50px;
-        background-color: #5024246e;
-        border-radius: 20px;
-        width: 10em;
-        padding: 20px;
-    }
-    /* .myPhoto img { */
-/* display: flex; */
-/* margin: auto; */
-/* } */
-/* } */
-
 
 /* CSS for contact form */
 
@@ -430,3 +348,76 @@ hr {
     margin-left: 19px;
     margin-top: 0;
 }
+
+@media (max-width: 430px) {
+    .skills {
+        width: 35rem;
+        margin: auto;
+        margin-left: 3.5rem;
+        margin-top: 0rem;
+        font-size: 1.2rem;
+    }
+    .email {
+        width: 35rem;
+        margin: auto;
+        margin-left: 3.5rem;
+        margin-top: 0rem;
+    }
+    
+    .content {
+        margin-top: 2rem;
+        width: 41.6rem;
+    }
+    
+    hr {
+        width: 11rem;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 1100px) {
+    .skills {
+        width: 55rem;
+        font-size: 1.2rem;
+        margin-left: 8rem;
+        margin-bottom: 4rem;
+        margin-top: 0rem;
+    }
+    .email {
+        width: 55rem;
+        margin-left: 8rem;
+        margin-bottom: 4rem;
+        margin-top: 0rem;
+    }
+}    
+
+@media (max-width: 800px) {
+    .chintan, .patel {
+        display: flex;
+    }
+    
+}
+
+@media (max-width: 1100px) {
+
+    .devPic {
+        display: none;
+    }    
+
+
+    .main {
+        /* margin: auto; */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }    
+    
+    hr {
+
+        width: 40rem;
+    }
+    .email {
+        /* margin: auto; */
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        
+    }
+}    
