@@ -15,9 +15,10 @@ html {
 }
 
 body {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100%;
+    /* background-color: black; */
 }
 
 .container {
@@ -183,6 +184,7 @@ body {
     border-radius: 1rem;
     /* box-shadow: 10px 12px 12px 10px black; */
 }
+
 .email {
     display: flex;
     justify-content: center;
@@ -242,10 +244,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e171716e;
-    border-radius: 20px;
     width: 20rem;
-    padding: 20px;
 }
 
 .myPhoto img {
@@ -253,8 +252,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    border-radius: 1.5rem;
     width: 100%;
-    /* padding: 20px; */
 }
 
 hr {
@@ -286,7 +285,7 @@ hr {
     padding: 1rem;
 }
 
-.link a img{
+.link a img {
     height: 5rem;
     width: 5rem;
 }
@@ -357,18 +356,19 @@ hr {
         margin-top: 0rem;
         font-size: 1.2rem;
     }
+
     .email {
         width: 35rem;
         margin: auto;
         margin-left: 3.5rem;
         margin-top: 0rem;
     }
-    
+
     .content {
         margin-top: 2rem;
         width: 41.6rem;
     }
-    
+
     hr {
         width: 11rem;
     }
@@ -382,42 +382,46 @@ hr {
         margin-bottom: 4rem;
         margin-top: 0rem;
     }
+
     .email {
         width: 55rem;
         margin-left: 8rem;
         margin-bottom: 4rem;
         margin-top: 0rem;
     }
-}    
+}
 
 @media (max-width: 800px) {
-    .chintan, .patel {
+
+    .chintan,
+    .patel {
         display: flex;
     }
-    
+
 }
 
 @media (max-width: 1100px) {
 
     .devPic {
         display: none;
-    }    
+    }
 
 
     .main {
         /* margin: auto; */
         margin-top: 1rem;
         margin-bottom: 1rem;
-    }    
-    
+    }
+
     hr {
 
         width: 40rem;
     }
+
     .email {
         /* margin: auto; */
         margin-top: 0rem;
         margin-bottom: 0rem;
-        
+
     }
-}    
+}
